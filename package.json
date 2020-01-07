@@ -1,0 +1,38 @@
+{
+  "name": "laser-pannel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.2",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "com.wit.app",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "icon": "fav.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "extraResources": [
+      {
+        "from": "./backend/out/dist/backend.exe",
+        "to": "./bin/backend.exe"
+      }
+    ]
+  }
+}

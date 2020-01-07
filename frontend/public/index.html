@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>laser-control</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but laser-control doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<style>
+  .el-scrollbar__wrap {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  .el-menu--horizontal>.el-menu-item {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+    color: #909399;
+  }
+
+  .el-menu--horizontal {
+    border-right: none;
+    transition: border-color .3s, background-color .3s, color .3s;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  .el-menu.el-menu--horizontal {
+    border-bottom: none;
+  }
+
+  .el-table th.gutter {
+    display: table-cell !important;
+  }
+
+  .v-modal {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  .connectButton {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #FFF;
+    border: none;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    -webkit-transition: .1s;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 0px;
+  }
+
+  .connectButton:focus,
+  .connectButton:hover {
+    color: #323130;
+    border-color: #f3f2f1;
+    background-color: #f3f2f1;
+  }
+
+  .connectButton i {
+    color: #0078d4;
+    font-size: 1.1em;
+  }
+
+  .write-dialog {
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+    border-radius: 2px;
+  }
+</style>
+
+</html>
